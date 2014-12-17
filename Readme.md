@@ -2,6 +2,18 @@
 
 Simple, powerful file uploads for Node.js applications. Configure once, and upload from anywhere in your application.
 
+Telecast sets the standard for upload managers by allowing you to:
+
+* Configure the directory and provider where file uploads are stored once, and use that location anywhere in your application
+
+* Forget writing ```mkdirp``` commands, even when streaming, while writing to your local filesystem.
+
+* Upload to multiple cloud storage providers (even at the same time) for redundancy.
+
+* Interact with those providers through the *one true interface for file transfer*... a.k.a. Node Streams.
+
+* Seamlessly integrate streaming multipart-parsers (like [Busboy](http://github.com/mscdex/busboy)) into your application with little or no hassle.
+
 ## Usage
 
 ### Uploading
