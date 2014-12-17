@@ -55,7 +55,6 @@ For detailed usage instructions, see the [Example Application](http://github.com
 If you intend to use [Amazon S3](http://aws.amazon.com/s3) or [Rackspace Cloud Files](http://rackspace.com/cloud/files), you'll need to require one or more of the following packages:
 
 * [telecast-aws](http://github.com/originalmachine/telecast-aws)
-* [telecast-rackspace](http://github.com/originalmachine/telecast-rackspace)
 
 Make sure the relevant packages are in your ```package.json```, and Telecast will do the rest.
 
