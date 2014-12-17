@@ -14,7 +14,7 @@ Telecast.prototype.configure = function (options) {
     this.providers = [];
   }
 
-  if (!options.local) options.local = {};
+  if (!Object.keys(options).length) options.local = {};
 
   for (var key in options) {
     this.providers.push(
