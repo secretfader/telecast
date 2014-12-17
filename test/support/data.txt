@@ -1,0 +1,7 @@
+Test Data
+=============================================================
+
+Hey, I'm some test data for Telecast,
+a flexible file upload system for Node.js.
+
+Check it out at http://github.com/originalmachine/telecast
