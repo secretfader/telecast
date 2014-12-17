@@ -3,7 +3,8 @@ var telecast = require('../')
 ,   path     = require('path')
 ,   async    = require('async')
 ,   expect   = require('chai').expect
-,   Readable = require('stream').Readable;
+,   Readable = require('stream').Readable
+,   Through  = require('stream').PassThrough;
 
 describe('Telecast: Defaults', function () {
   it('should require the local provider', function () {
@@ -76,6 +77,8 @@ describe('Telecast: File Upload', function () {
       ,   upload;
 
       upload = telecast.put('hello.txt');
+
+      expect(upload instanceof Through).to.equal(true);
 
       upload.on('success', function (stored) {
         expect(stored).to.not.equal(null);
