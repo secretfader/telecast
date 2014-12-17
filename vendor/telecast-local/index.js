@@ -47,7 +47,7 @@ LocalProvider.prototype.put = function (dest) {
     var upload = fs.createWriteStream(self.path(dest));
 
     upload.once('finish', function () {
-      handler.emit('success', dest);
+      handler.emit('success', { name: dest });
     });
 
     handler.pipe(upload);

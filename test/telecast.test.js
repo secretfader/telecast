@@ -81,7 +81,7 @@ describe('Telecast: File Upload', function () {
       expect(upload instanceof Through).to.equal(true);
 
       upload.on('success', function (stored) {
-        expect(stored).to.not.equal(null);
+        expect(stored.name).to.not.equal(null);
         fs.exists(output, function (exists) {
           expect(exists).to.not.equal(false);
           done();

@@ -1,6 +1,6 @@
 {
   "name": "telecast",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Simple, powerful file uploads for Node.js applications.",
   "main": "index.js",
   "scripts": {
