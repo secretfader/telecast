@@ -11,7 +11,7 @@ describe('Telecast: Defaults', function () {
   });
 
   it('should use a default root directory', function () {
-    expect(telecast.provider().options.root)
+    expect(telecast.provider().root)
       .to.equal(path.join(process.cwd(), 'uploads'));
   });
 });
@@ -27,16 +27,21 @@ describe('Telecast: Configuration', function () {
   });
 
   it('should accept configuration for each provider', function () {
-    expect(telecast.provider().options.root)
+    expect(telecast.provider().root)
       .to.equal(path.join(__dirname, 'tmp'));
 
-    expect(telecast.provider('local').options.root)
+    expect(telecast.provider('local').root)
       .to.equal(path.join(__dirname, 'tmp'));
   });
 
   it('should expose provider options', function () {
     expect(telecast.provider().name).to.equal('local');
-    expect(Object.keys(telecast.provider().options).length).to.not.equal(0);
+    expect(telecast.provider().root).to.equal(path.join(__dirname, 'tmp'));
+  });
+
+  it('should allow accessing the path for a given object', function () {
+    expect(telecast.provider().path('hello.txt'))
+      .to.equal(path.join(__dirname, 'tmp/hello.txt'));
   });
 });
 

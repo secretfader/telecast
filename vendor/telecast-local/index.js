@@ -10,15 +10,16 @@ var path    = require('path')
 * Create LocalProvider constructor.
 */
 var LocalProvider = function (options) {
-  this.name         = 'local';
-  this.options      = options || {};
-  this.options.root = options.root || path.join(process.cwd(), 'uploads');
+  options   = options || {};
+
+  this.name = 'local';
+  this.root = options.root || path.join(process.cwd(), 'uploads');
 
   /**
    * Helpers
    */
   this.path = function (input) {
-    return path.join(this.options.root, input);
+    return path.join(this.root, input);
   };
 };
 
