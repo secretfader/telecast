@@ -1,7 +1,12 @@
 {
   "name": "telecast-local",
+  "description": "Local file storage for Telecast.",
   "version": "0.1.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/originalmachine/telecast.git"
+  },
   "dependencies": {
     "mkdirp": "^0.5.0"
   }
