@@ -1,5 +1,7 @@
 # Telecast
 
+![travis-ci](https://travis-ci.org/originalmachine/telecast.svg)
+
 Simple, powerful file uploads for Node.js applications. Configure once, and upload from anywhere in your application.
 
 Telecast sets the standard for upload managers by allowing you to:

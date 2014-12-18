@@ -2,3 +2,4 @@ Gulpfile.js
 test
 examples
 *.log
+.travis.yml
