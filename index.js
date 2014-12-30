@@ -1,5 +1,5 @@
-var path = require('path')
-,   lo   = require('lodash')
+var path     = require('path')
+,   findLast = require('lodash.findlast')
 ,   Telecast;
 
 Telecast = function () {
@@ -26,7 +26,7 @@ Telecast.prototype.configure = function (options) {
 Telecast.prototype.provider = function (name) {
   if (1 === this.providers.length || !name) return this.providers[0];
 
-  var retrieved = lo.findLast(this.providers, function (provider) {
+  var retrieved = findLast(this.providers, function (provider) {
     return name === provider.name;
   });
 
