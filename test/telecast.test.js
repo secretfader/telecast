@@ -6,6 +6,8 @@ var telecast = require('../')
 ,   Readable = require('stream').Readable
 ,   Through  = require('stream').PassThrough;
 
+telecast.configure();
+
 describe('Telecast: Defaults', function () {
   it('should require the local provider', function () {
     expect(telecast.provider().name).to.equal('local');

@@ -2,7 +2,7 @@
   "name": "telecast",
   "version": "0.3.1",
   "description": "Simple, powerful file uploads for Node.js applications.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "gulp test"
   },
@@ -39,6 +39,7 @@
     "async": "^0.9.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
+    "gulp-babel": "^4.0.0",
     "gulp-mocha": "^2.0.0"
   }
 }
