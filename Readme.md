@@ -1,5 +1,7 @@
 # Telecast
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nicholaswyoung/telecast.svg)](https://greenkeeper.io/)
+
 [![travis-ci](https://travis-ci.org/originalmachine/telecast.svg)](https://travis-ci.org/originalmachine/telecast)
 
 Simple, powerful file uploads for Node.js applications. Configure once, and upload from anywhere in your application.
