@@ -29,17 +29,17 @@
   },
   "homepage": "https://github.com/originalmachine/telecast",
   "dependencies": {
-    "lodash.findlast": "^2.4.1",
+    "lodash.findlast": "^4.6.0",
     "telecast-local": "./vendor/telecast-local"
   },
   "bundledDependencies": [
     "telecast-local"
   ],
   "devDependencies": {
-    "async": "^0.9.0",
-    "chai": "^1.10.0",
+    "async": "^2.5.0",
+    "chai": "^4.1.0",
     "gulp": "^3.8.10",
-    "gulp-babel": "^4.0.0",
-    "gulp-mocha": "^2.0.0"
+    "gulp-babel": "^6.1.2",
+    "gulp-mocha": "^4.3.1"
   }
 }
