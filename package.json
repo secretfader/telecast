@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/originalmachine/telecast",
   "dependencies": {
-    "lodash.findlast": "^2.4.1",
+    "lodash.findlast": "^4.0.0",
     "telecast-local": "./vendor/telecast-local"
   },
   "bundledDependencies": [
